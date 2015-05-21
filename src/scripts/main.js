@@ -9,6 +9,7 @@ var bespoke = require('bespoke'),
   hash = require('bespoke-hash'),
   progress = require('bespoke-progress'),
   forms = require('bespoke-forms');
+  state = require('bespoke-state');
 
 // Bespoke.js
 bespoke.from('article', [
@@ -20,6 +21,7 @@ bespoke.from('article', [
   scale(),
   hash(),
   progress(),
+  state(),
   forms()
 ]);
 
